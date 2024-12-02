@@ -1,7 +1,6 @@
 ================%%%
 no text conflict
 ================%%%
-
 <<<<<<< a
 ||||||| a
 =======
@@ -22,7 +21,6 @@ no text conflict
 ==========================%%%
 no text conflict no common
 ==========================%%%
-
 <<<<<<< a
 =======
 >>>>>>> a
@@ -41,7 +39,6 @@ no text conflict no common
 ================%%%
 no text conflict no labels
 ================%%%
-
 <<<<<<<
 |||||||
 =======
@@ -71,6 +68,7 @@ a
 ---%%%
 
 (source_file
+    (comment)
     (conflict
         (start
             (label))
@@ -123,6 +121,7 @@ some text
 ---%%%
 
 (source_file
+    (comment)
     (comment)
     (comment)
     (conflict

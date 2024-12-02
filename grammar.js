@@ -21,7 +21,7 @@ module.exports = grammar({
     ),
     _body:       $ => repeat1(
       choice(
-        $._eol,
+        alias($._eol, $.comment),
         seq($.conflict, $._eol),
         seq($.comment, $._eol),
       ),

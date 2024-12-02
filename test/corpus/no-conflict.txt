@@ -74,6 +74,13 @@ z
     (comment)
     (comment)
     (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
     (comment))
 
 ====%%%
@@ -95,6 +102,9 @@ a >>>>>>> a
 ---%%%
 
 (source_file
+    (comment)
+    (comment)
+    (comment)
     (comment)
     (comment)
     (comment)
