@@ -1,0 +1,28 @@
+some text
+some text
+<<<<<<< start label
+^^^^^^^^ conflict.start
+        ^^^^^^^^^^^ conflict.start.label
+some text
+^^^^^^^^^ conflict.ours
+some text
+^^^^^^^^^ conflict.ours
+||||||| common label
+^^^^^^^^ conflict.common_sep
+        ^^^^^^^^^^^^ conflict.common.label
+some text
+^^^^^^^^^ conflict.common
+some text
+^^^^^^^^^ conflict.common
+======= sep label
+^^^^^^^^ conflict.sep
+        ^^^^^^^^^ conflict.sep.label
+some text
+^^^^^^^^^ conflict.theirs
+some text
+^^^^^^^^^ conflict.theirs
+>>>>>>> end label
+^^^^^^^^ conflict.end
+        ^^^^^^^^^ conflict.end.label
+some text
+some text

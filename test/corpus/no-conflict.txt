@@ -1,0 +1,106 @@
+===========%%%
+no conflict
+===========%%%
+text
+more text
+---%%%
+
+(source_file
+    (comment)
+    (comment))
+
+================%%%
+long no conflict
+================%%%
+
+a
+b
+c
+d
+e
+f
+g
+
+h
+i
+j
+k
+l
+
+
+
+
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+
+
+---%%%
+
+(source_file
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment))
+
+====%%%
+conflict mark on the middle of the line
+====%%%
+
+a conflict starts with <<<<<<< contains ||||||| or ======= and ends with >>>>>>> markers
+
+a conflict starts with <<<<<<<
+contains |||||||
+or =======
+and ends with >>>>>>> markers
+
+a <<<<<<< a
+a ||||||| a
+a ======= a
+a >>>>>>> a
+
+---%%%
+
+(source_file
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment)
+    (comment))

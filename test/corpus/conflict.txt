@@ -1,0 +1,267 @@
+================%%%
+no text conflict
+================%%%
+
+<<<<<<< a
+||||||| a
+=======
+>>>>>>> a
+
+---%%%
+
+(source_file
+    (conflict
+        (start
+            (label))
+        (common_sep
+            (label))
+        (sep)
+        (end
+            (label))))
+
+==========================%%%
+no text conflict no common
+==========================%%%
+
+<<<<<<< a
+=======
+>>>>>>> a
+
+---%%%
+
+(source_file
+    (conflict
+        (start
+            (label))
+        (sep)
+        (end
+            (label))))
+
+
+================%%%
+no text conflict no labels
+================%%%
+
+<<<<<<<
+|||||||
+=======
+>>>>>>>
+
+---%%%
+
+(source_file
+    (conflict
+        (start)
+        (common_sep)
+        (sep)
+        (end)))
+
+========%%%
+conflict with text
+========%%%
+
+<<<<<<< a
+a
+||||||| a
+a
+======= a
+a
+>>>>>>> a
+
+---%%%
+
+(source_file
+    (conflict
+        (start
+            (label))
+        (hunk
+            (comment))
+        (common_sep
+            (label))
+        (hunk
+            (comment))
+        (sep
+            (label))
+        (hunk
+            (comment))
+        (end
+            (label))))
+
+===%%%
+large conflict
+===%%%
+
+some text
+some text
+<<<<<<< start label
+^^^^^^^^ conflict.start
+        ^^^^^^^^^^^ conflict.start.label
+some text
+^^^^^^^^^ conflict.ours
+some text
+^^^^^^^^^ conflict.ours
+||||||| common label
+^^^^^^^^ conflict.common_sep
+        ^^^^^^^^^^^^ conflict.common.label
+some text
+^^^^^^^^^ conflict.common
+some text
+^^^^^^^^^ conflict.common
+======= sep label
+^^^^^^^^ conflict.sep
+        ^^^^^^^^^ conflict.sep.label
+some text
+^^^^^^^^^ conflict.theirs
+some text
+^^^^^^^^^ conflict.theirs
+>>>>>>> end label
+^^^^^^^^ conflict.end
+        ^^^^^^^^^ conflict.end.label
+some text
+some text
+
+---%%%
+
+(source_file
+    (comment)
+    (comment)
+    (conflict
+        (start
+            (label))
+        (hunk
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment))
+        (common_sep
+            (label))
+        (hunk
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment))
+        (sep
+            (label))
+        (hunk
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment)
+            (comment))
+        (end
+            (label)))
+    (comment)
+    (comment)
+    (comment)
+    (comment))
+
+===%%%
+nested conflict
+===%%%
+a
+<<<<<<< a
+a
+<<<<<<< aa
+aa
+||||||| aa
+aa
+======= aa
+aa
+>>>>>>> aa
+a
+||||||| a
+a
+<<<<<<< ab
+ab
+||||||| ab
+ab
+======= ab
+ab
+>>>>>>> ab
+ab
+======= a
+a
+<<<<<<< ac
+ac
+||||||| ac
+ac
+======= ac
+ac
+>>>>>>> ac
+a
+>>>>>>> a
+a
+
+---%%%
+
+(source_file
+    (comment)
+    (conflict
+        (start
+            (label))
+        (hunk
+            (comment)
+            (conflict
+                (start
+                    (label))
+                (hunk
+                    (comment))
+                (common_sep
+                    (label))
+                (hunk
+                    (comment))
+                (sep
+                    (label))
+                (hunk
+                    (comment))
+                (end
+                    (label)))
+            (comment))
+        (common_sep
+            (label))
+        (hunk
+            (comment)
+            (conflict
+                (start
+                    (label))
+                (hunk
+                    (comment))
+                (common_sep
+                    (label))
+                (hunk
+                    (comment))
+                (sep
+                    (label))
+                (hunk
+                    (comment))
+                (end
+                    (label)))
+            (comment))
+        (sep
+            (label))
+        (hunk
+            (comment)
+            (conflict
+                (start
+                    (label))
+                (hunk
+                    (comment))
+                (common_sep
+                    (label))
+                (hunk
+                    (comment))
+                (sep
+                    (label))
+                (hunk
+                    (comment))
+                (end
+                    (label)))
+            (comment))
+        (end
+            (label)))
+    (comment))

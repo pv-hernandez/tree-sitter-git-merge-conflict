@@ -1,0 +1,36 @@
+{
+  "grammars": [
+    {
+      "name": "git_merge_conflict",
+      "camelcase": "GitMergeConflict",
+      "scope": "source.git_merge_conflict",
+      "path": ".",
+      "file-types": ["git_merge_conflict"],
+      "content-regex": "[<]{7}|[|]{7}|[=]{7}|[>]{7}",
+      "injection-regex": "^git_merge_conflict$",
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Parser for Git Merge Conflicts with support for Diff3 and nestined conflicts",
+    "authors": [
+      {
+        "name": "Paulo Hernandez",
+        "email": "paulovitormsh@hotmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/pv-hernandez/tree-sitter-git-merge-conflicts.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}

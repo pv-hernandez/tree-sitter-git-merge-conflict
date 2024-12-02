@@ -1,0 +1,172 @@
+[
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "common_sep",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "conflict",
+    "named": true,
+    "fields": {
+      "common": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "hunk",
+            "named": true
+          }
+        ]
+      },
+      "ours": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "hunk",
+            "named": true
+          }
+        ]
+      },
+      "theirs": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "hunk",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "common_sep",
+          "named": true
+        },
+        {
+          "type": "end",
+          "named": true
+        },
+        {
+          "type": "sep",
+          "named": true
+        },
+        {
+          "type": "start",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "end",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "hunk",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "conflict",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sep",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "conflict",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "start",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "label",
+    "named": true
+  }
+]
