@@ -8,7 +8,7 @@
       "file-types": ["git_merge_conflict"],
       "content-regex": "[<]{7}|[|]{7}|[=]{7}|[>]{7}",
       "injection-regex": "^git_merge_conflict$",
-      "highlights": "queries/highlights.scm"
+      "highlights": "queries/git_merge_conflict/highlights.scm"
     }
   ],
   "metadata": {
