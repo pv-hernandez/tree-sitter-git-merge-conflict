@@ -5,8 +5,7 @@
 (conflict
   (start
     label: (label) @conflict.start.label
-    (#set! priority 105))
-  )
+    (#set! priority 105)))
 
 (conflict
   ours: (hunk) @conflict.ours
@@ -18,9 +17,8 @@
 
 (conflict
   (common_sep
-    label: (label) @conflict.common.label
-    (#set! priority 105))
-  )
+    (label) @conflict.common_sep.label
+    (#set! priority 105)))
 
 (conflict
   common: (hunk) @conflict.common
@@ -33,8 +31,7 @@
 (conflict
   (sep
     label: (label) @conflict.sep.label
-    (#set! priority 105))
-  )
+    (#set! priority 105)))
 
 (conflict
   theirs: (hunk) @conflict.theirs
@@ -47,5 +44,4 @@
 (conflict
   (end
     label: (label) @conflict.end.label
-    (#set! priority 105))
-  )
+    (#set! priority 105)))

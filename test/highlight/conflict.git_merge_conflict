@@ -1,28 +1,28 @@
 some text
 some text
 <<<<<<< start label
-^^^^^^^^ conflict.start
-        ^^^^^^^^^^^ conflict.start.label
+^^^^^^^^           ^    conflict.start
+        ^^^^^^^^^^^     conflict.start.label
 some text
-^^^^^^^^^ conflict.ours
+^^^^^^^^^               conflict.ours
 some text
-^^^^^^^^^ conflict.ours
+^^^^^^^^^               conflict.ours
 ||||||| common label
-^^^^^^^^ conflict.common_sep
-        ^^^^^^^^^^^^ conflict.common.label
+^^^^^^^^            ^   conflict.common_sep
+        ^^^^^^^^^^^^    conflict.common_sep.label
 some text
-^^^^^^^^^ conflict.common
+^^^^^^^^^               conflict.common
 some text
-^^^^^^^^^ conflict.common
+^^^^^^^^^               conflict.common
 ======= sep label
-^^^^^^^^ conflict.sep
-        ^^^^^^^^^ conflict.sep.label
+^^^^^^^^         ^      conflict.sep
+        ^^^^^^^^^       conflict.sep.label
 some text
-^^^^^^^^^ conflict.theirs
+^^^^^^^^^               conflict.theirs
 some text
-^^^^^^^^^ conflict.theirs
+^^^^^^^^^               conflict.theirs
 >>>>>>> end label
-^^^^^^^^ conflict.end
-        ^^^^^^^^^ conflict.end.label
+^^^^^^^^         ^      conflict.end
+        ^^^^^^^^^       conflict.end.label
 some text
 some text
